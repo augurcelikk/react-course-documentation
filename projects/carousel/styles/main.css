@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+h1{
+    font-size:24px;
+    margin:16px 0;
+}
+
+h2{
+    font-size:20px;
+}
+
+
+.Carousel{
+    border:10px solid red;
+    width:50vw;
+    height:50vh;
+    margin:20px;
+    position:relative;
+
+    overflow:hidden;
+}
+
+
+.Carousel > ul{
+    border:4px solid blue;
+    width:200%;
+    height:100%;
+    display:flex;
+    margin-left:-0%;
+
+    transition:margin-left 500ms ease-out;
+}
+
+.Carousel > ul > li{
+    border:2px solid purple;
+
+    flex-basis:0;
+    flex-grow:1;
+
+    /* flex:1 1 0 */
+    
+}
+
+.Carousel > ul > li > img{
+    width:100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+
+.Carousel > ul > li:nth-child(2){
+    background-image: url("../images/P11365_10.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.Carousel .btn-directional{
+    position:absolute;
+    height:100%;
+    background-color:rgba(0,0,0,0.35);
+    color:white;
+    font-size:1.2rem;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.Carousel .btn-directional-prev{
+    top:0;
+    left:0;
+}
+
+
+.Carousel .btn-directional-next{
+    top:0;
+    right:0;
+}
+
+.Carousel .nav-bullets{
+    position:absolute;
+    bottom:24px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.Carousel .nav-bullets button{
+    width:16px;
+    height:16px;
+    border-radius:50%;
+    border:none;
+    background-color:black;
+    cursor:pointer;
+    border:2px solid white;
+}

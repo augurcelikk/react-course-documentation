@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON ( Java script object notation )</title>
+
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+      }
+
+      button {
+        min-width: 200px;
+        height: 40px;
+        align-self: center;
+        border-radius: 4px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="frm-credit-application">
+      <label for="currency"> para birimi </label>
+      <select id="currency" name="currency">
+        <option value="dollar">Dolar</option>
+        <option value="tl">Tl</option>
+        <option value="euro">Euro</option>
+      </select>
+
+      <label for="education">Eğitim bilginiz</label>
+      <input
+        type="text"
+        name="education"
+        id="education"
+        placeholder="Eğitim durumunuz"
+      />
+
+      <label for="income">Gelir Bilginiz</label>
+      <input
+        type="text"
+        name="income"
+        id="income"
+        placeholder="Aylık geliriniz"
+      />
+
+      <button type="submit">Talep gönder</button>
+    </form>
+
+    <script>
+      const myJsObj = { id: 12, title: "test", hello: function () {} };
+
+      const myJsonStr = '{ "id":12, "title":"test"   }'; //json str
+
+      const myJsonStr2 = '{ "shape":"circle", "id":"15" }';
+
+      console.log(myJsonStr2.shape);
+
+      //JSON.parse metodu ile gelen data stringinden js objesi yapabilirsin
+      const shape = JSON.parse(myJsonStr2).shape;
+
+      console.log(shape);
+
+      const formData = [
+        { inputName: "firstName", value: "Burak" },
+        { inputName: "location", value: "Çanakkale" },
+      ];
+
+      const formDataJsonStr = JSON.stringify(formData);
+
+      console.log(formDataJsonStr);
+
+      //form datasını json data olarak hazırla
+
+      const formEl = document.getElementById("frm-credit-application");
+
+      formEl.addEventListener("submit", handleSubmit);
+
+      function handleSubmit(e) {
+        e.preventDefault();
+
+        //form datasını al
+
+        //form içinden eğitim kullanıcı girdisini al
+        const valEducation = document.querySelector(
+          "input[name='education']"
+        ).value;
+        //form içinden  gelir kullanıcı girdisini al
+        const valIncome = document.querySelector("input[name='income']").value;
+
+        //form içinden para birimi kullanıcı girdisini al
+        const valCurrency = document.querySelector(
+          "select[name='currency']"
+        ).value;
+
+        console.log(valIncome, valCurrency, valEducation);
+
+        //aldığın bilgilerden bir json string oluştur. Kendi stringini inşa et
+        const formDataJsonStr = ` {"income":${valIncome}, "education":${valEducation}, "currency":${valCurrency} } `;
+
+        console.log(formDataJsonStr);
+
+        //aldığın bilgilerden bir json string oluştur. js obje'sinden JSON objesinin stringfy static metodunu kullanarak da json stringini inşa edebilirsin
+        const formDataObj = {
+          income: valIncome,
+          currency: valCurrency,
+          education: valEducation,
+        };
+
+        const formDataJsonStrFromDataObj = JSON.stringify(formDataObj);
+
+        //*** form datasını almak için daha modern bir yöntem ***
+
+        const formData = new FormData(formEl);
+
+        console.log(formData, "***");
+
+        const formEntries = formData.entries();
+
+        const testing = [...formEntries];
+
+        console.log(JSON.stringify(testing));
+
+        /*
+        for (let entry of formData.entries()) {
+          console.log(entry);
+        }
+        */
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+body{
+    background-color:rgb(177, 117, 234);
+}
+
+
+
+
+/* max-width:1200px -> viewport genişliği <= 1200px  */
+@media screen and ( max-width:1200px ){
+
+    body{
+        background-color:rgb(217, 211, 168);
+    }
+
+}
+
+
+/* max-width:700px -> viewport genişliği <= 700px  */
+@media screen and ( max-width:700px ){
+
+    body{
+        background-color:rgb(168, 209, 217);
+    }
+
+}
+

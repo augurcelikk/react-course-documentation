@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ürünler, kdv, sepet toplam hesaplama</title>
+  </head>
+  <body>
+    <script>
+      //tekstil, elektronik, beyaz eşya kategorilerinde ürünlerimiz var. Her kategorideki ürünün vergi oranı farklı.
+
+      //kullanıcı kdv'siz fiyatları görüyor, (siz de ürün listelerinizde kdv hariç fiyaları tutuyosunuz)
+
+      //kullanıcı 2 adet tekstil ürünü, 1 adet elktronik ürün, 1 adet beyaz eşya alıyor.
+
+      //kullanıcımıza kdv dahil toplam fiyatı gösterebileceğim bir kod yazınız.
+
+      const taxRatesByCategory = {
+        electronics: 0.18,
+        textile: 0.35,
+        houseHold: 0.42,
+      };
+
+      const userBasket = [
+        { title: "hp Laptop", price: 12000, category: "electronics" },
+        { title: "logitech", price: 12000, category: "electronics" },
+        { title: "x marka shirt", price: 1000, category: "textile" },
+        { title: "y marka boxer", price: 300, category: "textile" },
+        { title: "vestel buzdolabı", price: 16000, category: "houseHold" },
+      ];
+
+      function calculateBasketTotal(basketList) {
+        let total = 0;
+
+        for (product of basketList) {
+          total +=
+            product.price +
+            product.price * taxRatesByCategory[product.category];
+        }
+
+        return total;
+      }
+
+
+  
+
+      function messageToUser(message) {
+        console.log(message);
+      }
+
+
+      messageToUser("Sepet toplamınız kdv'ler dahil " + calculateBasketTotal(userBasket) + "TL" );
+    </script>
+  </body>
+</html>

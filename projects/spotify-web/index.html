@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Spotify Premium, reklamlar olmadan milyonlarca şarkıya erişmeni ve dinlemeni sağlayan dijital bir müzik hizmetidir. 3 ay ücretsiz kullan."
+    />
+    <title>Spotify</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="./images/spotify.svg" />
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <!-- fonts.google.com montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <div class="limited-width">
+          <a href="#" class="logo-main">
+            <i class="fa-brands fa-spotify"></i>
+            Spotify
+          </a>
+
+          <!-- expanden class'lı nav-hamburger için ul görünür yoksa saklanır-->
+          <nav class="nav-hamburger ">
+            <button type="button" class="btn-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <ul>
+              <li>
+                <a href="#">Premium</a>
+              </li>
+              <li>
+                <a href="#">Destek</a>
+              </li>
+              <li>
+                <a href="#">İndir</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="section-banner">
+          <div class="limited-width">
+            <div class="content">
+              <h1>Yakında sona eriyor: Premium 3 ay boyunca 0,00 TL</h1>
+
+              <p>
+                Reklamsız müzik dinleme, çevrimdışı çalma ve diğer avantajları
+                kaçırma. İstediğin zaman iptal et.
+              </p>
+
+              <p>Teklif 9 gün 14 sa. 11 dk. tarihinde sona erecek.</p>
+            </div>
+            <figure>
+              <img src="./images/spotify-banner.png" alt="" />
+              <!-- <figcaption>Spotify banner</figcaption> -->
+            </figure>
+          </div>
+        </section>
+
+        <section class="section-benefits limited-width">
+          <h1>Neden Premium'a geçmelisin?</h1>
+        </section>
+
+        <section class="section-packages limited-width">
+          <h1>Premium'unu seç</h1>
+        </section>
+      </main>
+      <footer>
+        <div class="limited-width">
+          <div class="container-logo">
+            <a href="#" class="logo-main">
+              <i class="fa-brands fa-spotify"></i>
+              Spotify
+            </a>
+          </div>
+
+          <div class="container-navs">
+            <nav>
+              <h2>Şirket</h2>
+
+              <ul>
+                <li>
+                  <a href="#">item 1</a>
+                </li>
+                <li>
+                  <a href="#">item 1</a>
+                </li>
+                <li>
+                  <a href="#">item 1</a>
+                </li>
+              </ul>
+            </nav>
+            <nav>
+              <h2>Topluluklar</h2>
+
+              <ul>
+                <li>
+                  <a href="#">item 1</a>
+                </li>
+                <li>
+                  <a href="#">item 1</a>
+                </li>
+                <li>
+                  <a href="#">item 1</a>
+                </li>
+              </ul>
+            </nav>
+            <nav>
+              <h2>Yararlı Bağlantılar</h2>
+
+              <ul>
+                <li>
+                  <a href="#">item 1</a>
+                </li>
+                <li>
+                  <a href="#">item 1</a>
+                </li>
+                <li>
+                  <a href="#">item 1</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <nav class="nav-social">
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+body {
+  background-color: #333;
+  color: white;
+}
+
+#container-todos-app {
+  max-width: 600px;
+
+  background-color: white;
+  color: black;
+  margin: 48px auto;
+  padding: 24px;
+}
+
+
+#todo-list > li{
+
+    border:1px solid #ddd;
+    padding:8px;
+
+    display:flex;
+    align-items: center;
+
+}
+
+#todo-list > li > p {
+    flex-grow:1;
+}
+
+#frm-add-todo {
+
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  row-gap:8px;
+}
+
+#frm-add-todo input[name="todo-name"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 1.2rem;
+  border:1px solid #ddd;
+}
+
+#frm-add-todo button[type="submit"] {
+  height: 40px;
+  border: none;
+  background-color:orangered;
+  color:white;
+  font-size:1rem;
+
+}
+
+/*  Components */
+
+/* Buttons */
+
+.btn-edit, .btn-delete{
+    height:32px;
+    width:56px;
+    
+}

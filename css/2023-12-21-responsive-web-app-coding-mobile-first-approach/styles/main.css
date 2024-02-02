@@ -1,0 +1,42 @@
+body{
+    /* 0 -700px mavi bir body */
+    background-color:blue;
+}
+
+
+
+
+
+
+
+
+
+
+/* @rule */
+
+@media print{
+    main img{
+        display:none;
+    }
+}
+
+
+@media screen and ( min-width:700px   ){
+
+
+    body{
+         /* 700px - sonsuza sarı bir body */
+        background-color:yellow;
+    }
+
+
+}
+
+
+@media screen and ( min-width:1200px ){
+    body{
+        /* 700px - sonsuza sarı bir body */
+       background-color:lightsteelblue;
+   }
+
+}

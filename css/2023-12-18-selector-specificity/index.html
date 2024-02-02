@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Java-11" />
+
+    <title>Selector Specificity</title>
+
+    <style>
+      body p {
+        font-size: 64px;
+      }
+    </style>
+
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <div>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <!-- en güçlü stillendirme inline stillendirmedir. Css tarafında !important kullanarak ezebilirsiniz... -->
+      <p style="font-size:200px">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+        numquam?
+      </p>
+    </div>
+  </body>
+</html>

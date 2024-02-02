@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary-1: yellow;
+  --clr-secondary-1: pink;
+  --clr-neutral-1: #222;
+  --clr-neutral-2: #444;
+  --clr-neutral-3: #666;
+  --clr-neutral-4: #888;
+  --clr-neutral-5: #aaa;
+  --clr-neutral-6: #ccc;
+  --clr-neutral-7: #eee;
+  --clr-neutral-8: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: pink;
+  font-family: "Roboto Mono", monospace;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+ul {
+  margin: 16px 0;
+}
+
+li {
+  margin: 16px 0;
+  list-style-type: disc;
+}
+
+p{
+  margin:24px 0;
+}
+
+:is(h1,h2, h3) + p{ text-decoration: underline;}
+
+#root > header {
+  background-color: var(--clr-neutral-1);
+  color: var(--clr-neutral-8);
+  padding: 24px;
+}
+
+main {
+  max-width: 1000px;
+  margin: 24px auto;
+  padding:24px 24px 160px;
+}
+
+
+#root > footer{
+  background-color: var(--clr-neutral-1);
+  color: var(--clr-neutral-8);
+  padding: 24px;
+}
+
+/* components */
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.modal{
+  position:fixed;
+  bottom:0;
+  right:0;
+  max-width:300px;
+  min-height:200px;
+  background-color:white;
+  border:2px solid black;
+  padding:24px;
+}

@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+h1{
+    font-size:24px;
+    margin:16px 0;
+}
+
+h2{
+    font-size:20px;
+}
+
+ul{
+    margin:16px;
+}
+
+#root{
+    border:4px solid black;
+    margin:48px;
+    padding:48px;
+   
+    
+}
+#root > header{
+    
+    margin-bottom:24px;
+}
+main{
+    border-top:4px solid black;
+    border-bottom:4px solid black;
+    margin-top:24px;
+    margin-bottom:24px;
+    padding:24px 0;
+}
+
+main > section{
+    border:2px solid black;
+    background-color:rgb(250, 241, 242);
+    padding:24px;
+    position:relative;
+}
+
+main > section > .box{
+    width:100px;
+    height:100px;
+    border:1px solid black;
+    background-color:rgba(255,0,0,0.35);
+}
+
+main > section > img{
+    width:100px;
+}
+main > section > .box::after{
+    content:"We r the boxes we r the absolute children";
+    font-size:0.8rem;
+    color:white;
+}
+
+main > section > .box:nth-of-type(1){
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+main > section > .box:nth-of-type(2){
+    position:absolute;
+    top:0;
+    right:0;
+}
+main > section > .box:nth-of-type(3){
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+main > section > .box:nth-of-type(4){
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+
+
+/* *** components *** */
+
+
+/* logo */
+.logo{
+    font-weight: 700;
+    font-size:24px;
+}
+.logo span{
+    background-color:black;
+    color:white;
+    letter-spacing: 4px;
+}
+
+
+
+/* helper classes */
+.red-border{
+    border:1px solid red;
+}
+
+.blue-border{
+    border:1px solid blue;
+}

@@ -1,0 +1,45 @@
+div{
+    border:8px solid blue;
+}
+header{
+    border:2px solid red;
+}
+
+/* --- space as a combinator --- */
+/* header tarafından  kapsanan bütün p elemanların seç */
+header p{
+    color:purple;
+}
+
+
+main{
+    border:2px solid black;
+}
+
+/* --- > (greater than ) as a combinator (child selector  )--- */
+
+/* main etiketinin çocuğu olan p'ler */
+main > p{ font-size:24px; }
+
+
+/* --- "+" (immediately after) as a combinator */
+h3 + ul{ color:aqua }
+
+
+footer{
+    border:2px solid red;
+}
+
+/* --- space as a combinator --- */
+/* footer tarafından  kapsanan bütün p elemanların seç */
+footer p{
+    color:pink;
+}
+
+
+/* --- , as a combinator */
+
+/* a ve p ve h1 ve div ve span */
+a, p, h1, div, span{       }
+
+header p, header p a{ }

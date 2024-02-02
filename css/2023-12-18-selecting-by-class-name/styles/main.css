@@ -1,0 +1,57 @@
+/* bjk sınıfına üye elemanlar */
+.bjk{
+    color:white;
+    background-color:black;
+}
+
+
+
+.fb{
+    background-color:yellow;
+    color:blue;
+}
+
+
+.gs{
+    background-color: yellow;
+    color:red;
+}
+
+
+
+
+
+/* 
+selector1: p
+selector2: .bjk
+*/
+
+/* tek bir elemanı daha da specific seçiyoruz.  */
+p.bjk{}
+
+
+/* hem vip hem bjk'li paragraf etiketleri */
+p.vip.bjk{}
+
+
+/* bjk'li herhangi bir eleman */
+.bjk{}
+
+/* vip olan herhangi bir eleman */
+.vip{}
+
+
+/* hem vip hem bjk'li elemanlar */
+.bjk.vip{}
+
+
+
+
+
+
+
+
+
+/* p tarafından kapsanan bjk'li elemanlar  */
+
+p .bjk{}

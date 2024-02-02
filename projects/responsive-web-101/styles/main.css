@@ -1,0 +1,119 @@
+*{
+    box-sizing:border-box;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+img{
+    max-width:100%;
+}
+
+h1{
+    font-size:2rem;
+}
+
+
+h2{
+    font-size:1.8rem;
+}
+
+#root{
+    border:20px solid gray;
+}
+#root > header{
+    border:2px solid black;
+}
+main{
+    border:2px solid black;
+}
+
+main .banner{
+    background-color: #333;
+    color:white;
+}
+
+#root > footer{
+    border:2px solid black;
+}
+
+/* *** helper classes *** */
+.limited-width{
+    max-width: 1000px;
+    margin:0 auto;
+    border:2px solid red;
+}
+
+
+/* *** Components ****/
+
+.logo-main{
+    font-size:2.5rem;
+}
+
+
+
+.card-list{
+    background-color:rgb(224, 212, 235);
+    padding:24px;
+}
+
+.card{
+    border:2px solid black;
+    padding:24px;
+
+}
+
+.hamburger-nav{
+    border:2px solid blue;
+    background-color: rgba(100, 208, 255, 0.35);
+    position:absolute;
+    top:0;
+    right:0;
+    width:50vw;
+    height:50vh;
+    text-align: right;
+}
+
+
+.hamburger-nav > ul > li > a{
+    border:2px solid red;
+    display: flex;
+    height:48px;
+    align-items: center;
+    justify-content:end;
+    padding:0 32px;
+    background-color:#333;
+    color:white;
+   
+}
+
+.hamburger-nav > ul{
+    display:none;
+}
+
+.hamburger-nav.active > ul{
+    display:block;
+}
+
+
+
+
+@media screen and ( min-width:750px ){
+    .card-list{display:flex;}
+
+    .card{ flex:1 1 0 }
+
+    .hamburger-nav{ position:static; width:100%; height:auto; }
+    .hamburger-nav .btn-toggle{
+        display:none;
+    }
+
+    .hamburger-nav > ul {
+        display:flex;
+        justify-content: center;
+    }
+
+}

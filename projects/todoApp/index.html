@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yapılacaklar Listesi</title>
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <script src="./api.js"></script>
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <main>
+      <section id="container-todos-app">
+        <h1>Yapılacaklar Listesi</h1>
+
+        <form id="frm-add-todo">
+          <input
+            type="text"
+            name="todo-name"
+            id="todo-name"
+            placeholder="Yapılacak bir iş yazınız"
+          />
+
+          <button type="submit">Ekle</button>
+        </form>
+
+        <ul id="todo-list">
+          <li>
+            <p>Spor yap</p>
+
+            <button type="button" class="btn-delete">Sil</button>
+            <button type="button" class="btn-edit">Değiştir</button>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

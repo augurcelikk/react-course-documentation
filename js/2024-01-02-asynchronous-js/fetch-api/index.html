@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch api</title>
+    <script>
+      const API_BASEURL = "https://638a06e04eccb986e8a1804b.mockapi.io";
+    </script>
+    <script src="./01.js" defer></script>
+    <script src="./02.js" defer></script>
+    <script src="./03.js" defer></script>
+    <script src="./04.js" defer></script>
+    <script src="./05.js" defer></script>
+  </head>
+  <body>
+    <form id="frm-get-user">
+      <input
+        type="text"
+        name="user-id"
+        id="user-id"
+        placeholder="Kullanıcı id numarası"
+      />
+      <button type="submit">Kullanıcıyı getir</button>
+
+      <p id="selected-user"></p>
+    </form>
+
+    <button type="button" id="btn-add-new-user" onclick="handleAddNewUser()">
+      Yeni Kullanıcı Ekle
+    </button>
+    <button type="submit" onclick="handleDeleteUser()">Kullanıcı sil</button>
+
+    <button type="submit" onclick="handleUpdateUser()">
+      Kullanıcı güncelle
+    </button>
+  </body>
+</html>

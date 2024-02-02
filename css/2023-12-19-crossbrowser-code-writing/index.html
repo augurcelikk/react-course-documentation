@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Java-11" />
+
+    <title>Tarayıcılar arası tutarlı çalışan kod yazabilmek</title>
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <h1 class="logo">
+          <a href="">
+            <img src="./images/logo.svg" />
+            Java 11 Frontend
+          </a>
+        </h1>
+      </header>
+      <main>
+        <h1>Tarayıcılar arası tutarlı kod yazmak için:</h1>
+
+        <!-- ordered list -->
+        <ol>
+          <li>
+            Tarayıcı varsayılı ( default ) stillerinin farkında olmak.
+            Gerektiğinde bu stilleri tüm tarayıcılar için aynı zemine taşımak.
+            Reset kullanmak.
+          </li>
+
+          <li>
+            Kullandığınız css özelliklerinin tarayıcı uygunluğunu kontrol edin.
+            Cross browser compatibility
+
+            <a href="https://caniuse.com" target="_blank"
+              >Can I use? sitesinden bakabilirsiniz...</a
+            >
+          </li>
+          <li>
+            Gerekli olduğunda vendor prefix ( tarayıcı öneki kullanın )
+            <ul>
+              <li>chrome, safari prefix: -webkit-</li>
+              <li>firefox: -moz-</li>
+              <li>opera: -o-</li>
+              <li>edge: -ms-</li>
+            </ul>
+          </li>
+
+          <li>
+            css @support media kuralı ile de uygunluk kontrolü ( compatibility
+            check ) yapabilrsin
+          </li>
+
+          <li>
+            firefox, opera, edge, safari gibi temel tarayıcılar ile testler
+            yapabilirsiniz...
+          </li>
+        </ol>
+
+        <div class="box">the box</div>
+      </main>
+      <footer>F</footer>
+    </div>
+  </body>
+</html>

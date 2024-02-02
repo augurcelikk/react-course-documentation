@@ -1,0 +1,35 @@
+.Todos {
+  border: 1px solid gray;
+  padding: 24px;
+}
+
+.Todos > form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  background-color: #ddd;
+  padding: 16px;
+}
+
+.Todos > form > input {
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.Todos > form > button[type="submit"] {
+  background-color: orangered;
+  color: white;
+  height: 40px;
+  border: none;
+}
+
+.Todos ul {
+  padding: 0;
+}
+
+.Todos li {
+  margin: 16px 0;
+  background-color: #ddd;
+  list-style: none;
+  padding: 16px;
+}

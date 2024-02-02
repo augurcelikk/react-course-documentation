@@ -1,0 +1,52 @@
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+
+#root{
+    border:20px solid blue;
+}
+
+
+#root > header{ 
+    border:2px solid black;
+    background-color:#333;
+    color:white;
+}
+
+
+
+main{ border:2px solid black; }
+
+
+
+
+#root > footer{ 
+    border:2px solid black;
+    background-color:#333;
+    color:white;
+}
+
+
+/*  *** Components *** */
+
+
+/* Logo */
+.logo{
+
+    background-color:pink;
+    font-size:24px;
+    color:black;
+
+}
+
+.logo img{
+    width:56px;
+}
+
+/* Carousel */
+.carousel{
+    height:400px;
+    background-color:mediumseagreen;
+}

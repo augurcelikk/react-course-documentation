@@ -1,0 +1,29 @@
+#root {
+  padding: 24px;
+  background-color: #333;
+  color: white;
+  min-height: 100vh;
+  border: 1px solid black;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+#stage {
+  border: 1px solid pink;
+  padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button {
+  width: 200px;
+  height: 48px;
+  font-size: 1rem;
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

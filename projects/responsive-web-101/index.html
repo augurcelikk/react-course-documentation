@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- 1. viewport meta tagi - mobil cihazların web sayfamı küçülterek cihaz ekranına sığdırmasını engelliyoruz -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Java-11" />
+
+    <title>Responsive web 101</title>
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <script src="./js/nav-hamburger.js" defer></script>
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <div class="limited-width">
+          <h1 class="logo-main">
+            <a href="#">responsive 101</a>
+          </h1>
+
+          <nav class="hamburger-nav">
+            <button class="btn-toggle">Menü aç kapat</button>
+            <ul>
+              <li>
+                <a href="#">item 1</a>
+              </li>
+              <li>
+                <a href="#">item 2</a>
+              </li>
+              <li>
+                <a href="#">item 3</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="banner">
+          <div class="limited-width">
+            Merhaba responsive
+            <img src="./images/main-image.jpeg" alt="" />
+          </div>
+        </section>
+
+        <section class="feautured limited-width">
+          <h2>Öne çıkanlar</h2>
+          <ul class="card-list">
+            <li class="card">1</li>
+            <li class="card">2</li>
+            <li class="card">3</li>
+            <li class="card">4</li>
+          </ul>
+        </section>
+      </main>
+      <footer>
+        <nav>
+          <ul>
+            <li><a href="#">Github</a></li>
+            <li><a href="#">Linkedin</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hesap makinesi 101</title>
+
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./main.css" />
+
+    <script src="./01.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <form id="frm-calculator-101">
+        <h1>Hesap Makinesi 101</h1>
+
+        <label for="operation-type"
+          >İşlem
+          <select name="operation-type">
+            <option value="addition">Toplama</option>
+            <option value="multiplication">Çarpma</option>
+            <option value="division">Bölme</option>
+            <option value="substraction">Çıkartma</option>
+          </select>
+        </label>
+
+        <input type="number" name="op1" id="op1" placeholder="sayı 1" />
+        <input type="number" name="op2" id="op2" placeholder="sayı 2" />
+
+        <button type="submit">Hesapla</button>
+
+        <p id="container-message"></p>
+      </form>
+    </main>
+  </body>
+</html>

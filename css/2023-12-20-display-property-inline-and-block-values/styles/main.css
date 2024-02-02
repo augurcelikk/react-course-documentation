@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+h1{
+    font-size:20px;
+    margin:16px 0;
+}
+
+#root{
+    border:4px solid black;
+    margin:48px;
+    padding:48px;
+    
+}
+#root > header{
+    
+    margin-bottom:24px;
+}
+main{
+    border-top:4px solid black;
+    border-bottom:4px solid black;
+    margin-top:24px;
+    margin-bottom:24px;
+    padding:24px 0;
+}
+
+main > .lab{
+    background-color:rgb(252, 220, 225);
+    padding:24px;
+}
+
+main > .lab > .restricted-area{
+    border:1px dotted black;
+    min-height:200px;
+}
+
+/* *** LAB 1 - INLINE ÖĞELER İNCELEMESİ *** */
+
+/* display inline ise: */
+main > .lab:nth-child(1) .restricted-area{
+    text-align:center;
+}
+
+main > .lab:nth-child(1) .restricted-area span
+{
+    border:1px solid red;
+
+    /*
+    display:inline;
+
+    1- yazı karakterlerinin dizildiği yönde bulunurlar
+    2- genişlikleri auto'dur. 
+    3- yüksekliği satır yüksekliği kadardır.
+    4- genişlik ve yükseklik veremezsiniz.
+    5- kapsayıcılarından birine text-align özelliğinin değeri olarak left, center, right vererek hizalayabilirsiniz...
+    6- Satır yönünde, dikine hizlama için vertical-align özelliğini ve top, middle, bottom değerlerini kullanabilirsiniz.
+    */
+}
+
+main > .lab:nth-child(1) .restricted-area a{
+    border:2px solid blue;
+}
+
+
+
+
+/* *** LAB 2 - BLOCK ÖĞELER İNCELEMESİ *** */
+
+
+main > .lab:nth-child(2) .restricted-area{
+    text-align: center;
+}
+
+
+main > .lab:nth-child(2) .restricted-area > div{
+    border:2px solid blue;
+
+    /* 
+    
+    display:block 
+    
+
+    1- default width'leri 100%
+    2- default height'ları auto
+    3- width ve height verilebilir
+    4- dikeyde dizilmeye eğilimlidirler, yanlarına eleman kabul etmezler
+    5- margin sağ ve sol değerleri auto yapılarak pozitive space dağıtımı yapılabilir.
+    
+    */
+
+    width:20px;
+    height:40px;
+
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+main > .lab:nth-child(2) .restricted-area > header{
+    width:100px;
+    height:30px;
+}
+
+
+/* *** LAB 3 - INLINE-BLOCK ÖĞELER İNCELEMESİ *** */
+main > .lab:nth-child(3) .restricted-area{
+    text-align:center;
+}
+
+main > .lab:nth-child(3) .restricted-area > img{
+    width:56px;
+    /* display:inline-block; 
+    ebatlandırılabilir inline öğeler olarak düşünülebilir.
+    
+    */
+
+    vertical-align: middle;
+}
+
+#root > footer{
+
+   
+    margin-top:24px;
+}
+
+
+
+
+/* *** components *** */
+
+
+/* logo */
+.logo{
+    font-weight: 700;
+    font-size:24px;
+}
+.logo span{
+    background-color:black;
+    color:white;
+    letter-spacing: 4px;
+}
+
+
+
+/* helper classes */
+.red-border{
+    border:1px solid red;
+}
+
+.blue-border{
+    border:1px solid blue;
+}

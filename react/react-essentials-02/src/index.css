@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #ddd;
+  font-family: "Roboto Mono", monospace;
+}
+
+:root {
+  --clr-primary: yellow;
+  --clr-neutral-1: #222;
+  --clr-neutral-2: #333;
+  --clr-neutral-3: #555;
+  --clr-neutral-4: #888;
+  --clr-neutral-5: #aaa;
+  --clr-neutral-6: #ccc;
+  --clr-neutral-7: #ddd;
+  --clr-neutral-8: #fff;
+}
+
+#root :is(header, footer) {
+  background-color: var(--clr-neutral-2);
+  color: var(--clr-neutral-8);
+  padding: 24px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+}
+h1 {
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+h2 {
+  font-size: 1.2rem;
+  margin: 0.8rem 0;
+}
+
+ul {
+  padding: 16px;
+}
+li {
+  list-style-type: disc;
+  margin: 16px 0;
+}
+
+main > section {
+  padding: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+main > section > h2 + p {
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/*  *** Components *** */
+.logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.logo strong {
+  background-color: var(--clr-primary);
+  color: var(--clr-neutral-1);
+}
+
+.Toolbar {
+  border: 2px solid black;
+  padding: 16px;
+}
+
+.Stage {
+  border: 2px solid black;
+  padding: 16px;
+  background-color: red;
+  min-height:300px;
+}

@@ -1,0 +1,129 @@
+*{
+    box-sizing:border-box; /* çerçeve ve padding dahil ebatlandırma */
+}
+
+
+a{
+    color:inherit;
+    text-decoration: none; 
+}
+
+h1{
+    font-size:32px;
+}
+
+ul{
+    margin:48px;
+    border:2px solid red;
+}
+
+
+
+li{
+    list-style-type: decimal;
+    margin:24px;
+    border:2px solid blue;
+}
+
+
+#root{
+    border:2px solid black;
+    margin:24px;
+}
+
+
+#root > header{ 
+    border:2px solid black;
+    background-color:#333;
+    color:white;
+    padding:24px;
+}
+
+
+
+main{ border:2px solid black; }
+
+main .box{
+   border:10px solid black;
+    width:100px;
+    height: 100px;
+    padding:10px;
+    margin:10px;
+
+    /*
+        margin:10px;   -> margin shortcut  
+
+      margin-top:10px;
+      margin-right:10px;
+      margin-bottom:10px;
+      margin-left:10px;
+
+       margin-top:30px;
+      margin-right:40px;
+      margin-bottom:60px;
+      margin-left:70px;
+
+
+      margin-top:30px;
+
+
+        -> alt ve üst eşit 24px olsun, sağ ve sol eşit 32px olsun
+
+        margin:24px 32px;
+
+
+        -> dört bir yandan farklı değer, üst 24px, sağ 16px, alt 32px, sol 48px
+
+        margin:24px 16px 32px 48px;
+
+
+         ->  üst 24px, sağ 16px, alt 32px, sol 16px
+
+
+         margin:24px 16px 32px;
+
+    */
+   
+}
+
+
+
+
+
+main .box2{
+    width:200px;
+    height:200px;
+    border:10px solid blue;
+    padding:20px;
+   
+}
+
+
+#root > footer{ 
+    border:2px solid black;
+    background-color:#333;
+    color:white;
+    padding:24px;
+}
+
+/*  *** Components *** */
+
+
+/* Logo */
+.logo{
+
+    background-color:pink;
+    font-size:24px;
+    color:black;
+
+}
+
+.logo img{
+    width:56px;
+}
+
+.logo a{
+    color:black;
+}
+
+

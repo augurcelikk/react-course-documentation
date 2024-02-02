@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Java-11" />
+
+    <title>Css flex examples</title>
+
+    <!-- favicon 256px * 256px-->
+    <link rel="icon" href="./images/logo-red.svg" />
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <!-- font ailesi kullan roboto mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome cdn linki kullan  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+
+    <script src="./js/carousel.js" defer>
+
+    </script>
+  </head>
+  <body>
+    <!-- Carousel -->
+    <div class="Carousel">
+      <ul>
+        <li>
+          <img
+            src="./images/vincent-van-gogh-sunflowers-e1594341018936.jpg.webp"
+            alt="van gogh tablosu"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/Allegory-of-Charles-I-vanitas-1.jpg"
+            alt="deneme"
+          />
+        </li>
+      </ul>
+
+      <button class="btn-directional btn-directional-prev">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+
+      <button class="btn-directional btn-directional-next">
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+
+      <nav class="nav-bullets">
+        <button data-index="0"></button>
+        <button data-index="1"></button>
+      </nav>
+    </div>
+  </body>
+</html>

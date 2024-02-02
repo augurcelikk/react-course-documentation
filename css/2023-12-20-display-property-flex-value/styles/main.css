@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+h1{
+    font-size:24px;
+    margin:16px 0;
+}
+
+h2{
+    font-size:20px;
+}
+
+ul{
+    margin:16px;
+}
+
+#root{
+    border:4px solid black;
+    margin:48px;
+    padding:48px;
+    
+}
+#root > header{
+    
+    margin-bottom:24px;
+}
+main{
+    border-top:4px solid black;
+    border-bottom:4px solid black;
+    margin-top:24px;
+    margin-bottom:24px;
+    padding:24px 0;
+}
+
+
+
+/* *** SECTION 1 *** */
+
+/* Flex container: display değeri flex yapılmış öğe */
+main section:nth-child(1) > .region{
+    border:2px dotted blue;
+    display:flex;
+    /* flex-direction:row | row-reverse | column | column-reverse */
+    
+}
+
+
+/* Flex item: ebeveyn öğesinin display değeri flex olan öğe*/
+main section:nth-child(1) > .region > div{
+    border:2px solid black;
+}
+
+
+
+/* *** SECTION 2 *** */
+
+
+main section:nth-child(2) > .region{
+    border:2px dotted blue;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between /* center | end | space-between | space-around | space-evenly  */;
+    
+}
+
+main section:nth-child(2) > .region > div{
+    border:2px solid black;
+}
+
+
+/* *** SECTION 3 *** */
+
+
+main section:nth-child(3) > .region{
+    border:2px dotted blue;
+    display:flex;
+    flex-direction: row;
+    align-items: stretch /* start | end | center*/;
+    height:200px;
+    
+    
+}
+
+main section:nth-child(3) > .region > div{
+    border:2px solid black;
+}
+
+
+/* *** SECTION 4 *** */
+
+
+main section:nth-child(4) > .region{
+    border:2px dotted blue;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height:200px;
+    
+    
+}
+
+main section:nth-child(4) > .region > div{
+    border:2px solid black;
+}
+
+
+/* *** SECTION 5 *** */
+
+
+main section:nth-child(5) > .region{
+    border:2px dotted blue;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    height:200px;
+    
+    
+}
+
+main section:nth-child(5) > .region > div{
+    border:2px solid black;
+}
+
+
+
+#root > footer{
+
+   
+    margin-top:24px;
+}
+
+
+
+
+/* *** components *** */
+
+
+/* logo */
+.logo{
+    font-weight: 700;
+    font-size:24px;
+}
+.logo span{
+    background-color:black;
+    color:white;
+    letter-spacing: 4px;
+}
+
+
+
+/* helper classes */
+.red-border{
+    border:1px solid red;
+}
+
+.blue-border{
+    border:1px solid blue;
+}

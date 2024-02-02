@@ -1,0 +1,26 @@
+div p{ color:pink; }
+
+p{ color:red; }
+
+html body div p{
+color:purple;
+}
+
+html p{ font-size:24px; }
+
+body p{ font-size:12px; }
+
+
+p{
+    font-size:16px!important;
+}
+
+
+
+
+
+
+
+
+
+

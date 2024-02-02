@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+h1{
+    font-size:24px;
+    margin:16px 0;
+}
+
+h2{
+    font-size:20px;
+}
+
+
+#root{
+    border:4px solid black;
+    margin:48px;
+    padding:48px;
+    
+}
+#root > header{
+    
+    margin-bottom:24px;
+}
+main{
+    border-top:4px solid black;
+    border-bottom:4px solid black;
+    margin-top:24px;
+    margin-bottom:24px;
+    padding:24px 0;
+}
+
+main .example{
+    background-color: rgb(234, 216, 219);
+    padding:8px;
+    margin:24px 0;
+}
+
+main .example .content .logo{
+    border:2px solid red;
+    text-decoration: none;
+    color:black;
+    font-size:16px;
+}
+
+main .example .content .logo img{
+    width:32px;
+    vertical-align: middle;
+}
+
+
+/* ***  Örnek 1 *** */
+main .example-1 .content{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    border:2px solid blue;
+    
+}
+
+main .example-1 .content nav{
+    border:2px solid red;
+}
+
+main .example-1 .content nav ul{
+    display:flex;
+    gap:24px;
+}
+
+/* ***  Örnek 2 *** */
+
+
+main .example-2 .content{
+    border:2px solid blue;
+    display:flex;
+    align-items: center;
+    gap:24px;
+}
+main .example-2 .content .logo{
+    border:2px solid red;
+}
+main .example-2 .content #nav-primary{
+    border:4px solid orangered;
+    flex-grow:1;
+    
+}
+
+main .example-2 .content #nav-primary ul{
+    border:2px solid limegreen;
+    display:flex;
+    justify-content: end;
+    
+}
+
+
+main .example-2 .content #nav-secondary{
+    border:2px solid red;
+    font-size:12px;
+}
+
+main .example-2 .content #nav-secondary ul{
+    display:flex;
+}
+
+/* ***  Örnek 3 *** */
+main .example-3 .content{
+    border:2px solid blue;
+}
+main .example-3 .content .wrapper-top{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:16px;
+}
+main .example-3 .content #nav-lang {
+    border:2px solid blue;
+}
+main .example-3 .content #nav-main{
+    border:2px solid blue;
+}
+
+
+
+/* ***  Örnek 4 *** */
+main .example-4 .content{
+    border:2px solid blue;
+    display:flex;
+
+}
+main .example-4 .content > .col{
+border:2px solid red;
+flex-grow:1;
+flex-shrink:1;
+flex-basis:0;
+
+word-break: break-all;
+}
+
+/* ***  Örnek 5 *** */
+
+main .example-5 .content{
+    border:2px solid blue;
+}
+
+main .example-5 .content .row{
+    border:2px solid black;
+    display: flex;
+}
+
+main .example-5 .content .col{
+    border:2px solid blue;
+    flex:1 1 0;
+}
+
+
+
+/* *** Örnek 6 *** */
+
+main .example-6 .content{
+    border:2px solid black;
+    display:flex;
+    flex-wrap:wrap;
+    column-gap:8px;
+    row-gap:8px;
+}
+
+main .example-6 .content .col{
+    border:2px solid red;
+    flex-basis:calc( (100% - 16px) / 3 );
+    
+}
+
+
+
+
+
+
+/* *** components *** */
+
+
+/* logo */
+.logo{
+    font-weight: 700;
+    font-size:24px;
+}
+.logo span{
+    background-color:black;
+    color:white;
+    letter-spacing: 4px;
+}
+
+
+
+/* helper classes */
+.red-border{
+    border:1px solid red;
+}
+
+.blue-border{
+    border:1px solid blue;
+}
