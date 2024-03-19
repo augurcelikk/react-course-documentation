@@ -14,17 +14,17 @@ class UserService {
   }
 
   public async fetchProfile(token: string) {
-    let result = await userMicroservice.post('/user/getProfile', {token});
+    let result = await userMicroservice.post('/user/get-profile', {token});
     return result.data;
   }
 
   public async fetchProfileDetails(token: string) {
-    let result = await userMicroservice.post('/user/getProfile', {token});
+    let result = await userMicroservice.post('/user/get-profile', {token});
     return result.data;
   }
 
   public async createAdvance(advanceDto: CreateAdvanceModel) {
-    let result = await userMicroservice.post('/user/createAdvance', advanceDto);
+    let result = await userMicroservice.post('/user/create-advance', advanceDto);
     return result.data;
   }
 
@@ -34,7 +34,7 @@ class UserService {
   }
 
   public async createPermission(permissionDto: CreatePermissionModel) {
-    let result = await userMicroservice.post('/user/createPermission', permissionDto);
+    let result = await userMicroservice.post('/user/create-permission', permissionDto);
     return result.data;
   }
 
